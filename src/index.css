@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --color-canvas: #FAFAF7;
+  --color-canvas-subtle: #F4F4F0;
+  --color-canvas-dark: #111111;
+  --color-surface-dark: #191919;
+  --color-stone-muted: #7E7B75;
+  --color-stone-border: #E5E4DE;
+  --color-accent-gold: #C2A379;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: #FAFAF7;
+  color: #111111;
+}
+
+::selection {
+  background-color: #111111;
+  color: #FAFAF7;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAFAF7;
+}
+::-webkit-scrollbar-thumb {
+  background: #D2D0C8;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A9A79E;
+}
+
+@keyframes gentleDrift {
+  0%, 100% {
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    transform: scale(1.025) translateY(-4px);
+  }
+}
+
+.animate-gentle-drift {
+  animation: gentleDrift 14s ease-in-out infinite;
+}

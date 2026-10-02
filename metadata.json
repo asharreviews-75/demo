@@ -1,0 +1,6 @@
+{
+  "name": "Asharappareal — Minimalist Luxury Fashion House",
+  "description": "Asharappareal presents clean, architectural luxury clothing collections crafted in pure cashmere, silk, and virgin wool with timeless elegance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
